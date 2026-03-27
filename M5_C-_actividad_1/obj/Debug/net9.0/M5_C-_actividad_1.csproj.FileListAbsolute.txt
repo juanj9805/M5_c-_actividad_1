@@ -1,0 +1,14 @@
+C:\Users\JUAN JOSE\RiderProjects\M5_C-_actividad_1\M5_C-_actividad_1\bin\Debug\net9.0\M5_C-_actividad_1.exe
+C:\Users\JUAN JOSE\RiderProjects\M5_C-_actividad_1\M5_C-_actividad_1\bin\Debug\net9.0\M5_C-_actividad_1.deps.json
+C:\Users\JUAN JOSE\RiderProjects\M5_C-_actividad_1\M5_C-_actividad_1\bin\Debug\net9.0\M5_C-_actividad_1.runtimeconfig.json
+C:\Users\JUAN JOSE\RiderProjects\M5_C-_actividad_1\M5_C-_actividad_1\bin\Debug\net9.0\M5_C-_actividad_1.dll
+C:\Users\JUAN JOSE\RiderProjects\M5_C-_actividad_1\M5_C-_actividad_1\bin\Debug\net9.0\M5_C-_actividad_1.pdb
+C:\Users\JUAN JOSE\RiderProjects\M5_C-_actividad_1\M5_C-_actividad_1\obj\Debug\net9.0\M5_C-_actividad_1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JUAN JOSE\RiderProjects\M5_C-_actividad_1\M5_C-_actividad_1\obj\Debug\net9.0\M5_C-_actividad_1.AssemblyInfoInputs.cache
+C:\Users\JUAN JOSE\RiderProjects\M5_C-_actividad_1\M5_C-_actividad_1\obj\Debug\net9.0\M5_C-_actividad_1.AssemblyInfo.cs
+C:\Users\JUAN JOSE\RiderProjects\M5_C-_actividad_1\M5_C-_actividad_1\obj\Debug\net9.0\M5_C-_actividad_1.csproj.CoreCompileInputs.cache
+C:\Users\JUAN JOSE\RiderProjects\M5_C-_actividad_1\M5_C-_actividad_1\obj\Debug\net9.0\M5_C-_actividad_1.dll
+C:\Users\JUAN JOSE\RiderProjects\M5_C-_actividad_1\M5_C-_actividad_1\obj\Debug\net9.0\refint\M5_C-_actividad_1.dll
+C:\Users\JUAN JOSE\RiderProjects\M5_C-_actividad_1\M5_C-_actividad_1\obj\Debug\net9.0\M5_C-_actividad_1.pdb
+C:\Users\JUAN JOSE\RiderProjects\M5_C-_actividad_1\M5_C-_actividad_1\obj\Debug\net9.0\M5_C-_actividad_1.genruntimeconfig.cache
+C:\Users\JUAN JOSE\RiderProjects\M5_C-_actividad_1\M5_C-_actividad_1\obj\Debug\net9.0\ref\M5_C-_actividad_1.dll
