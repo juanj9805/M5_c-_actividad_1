@@ -8,11 +8,10 @@
 3: Manipulación de Cadenas
 4: Operaciones Lógicas (Calculadora)
 5: Análisis Numérico (Listas de enteros)
-6: Gestión de Tareas (Listas de cadenas)
+6: Gestión de Tareas (List<string>)
 7: Arreglos y Búsqueda
-8: Programación Orientada a Objetos (Clases)
-9: CRUD de Objetos (Listas de objetos)
-Salir");
+8: Colecciones de Objetos (List<Estudiante>)
+9: Salir");
     
     if (int.TryParse(Console.ReadLine(), out int option)) ;
 
@@ -82,8 +81,125 @@ Salir");
             
             break;
         case 6:
-            Console.WriteLine("op");
+            List<string> tareas = new List<string>();
+            bool continuarTareas = true;
+            while (continuarTareas)
+            {
+                Console.WriteLine(@"
+--- Gestión de Tareas ---
+1: Agregar tarea
+2: Ver tareas
+3: Eliminar tarea por índice
+4: Volver");
+                if (int.TryParse(Console.ReadLine(), out int opTareas))
+                {
+                    switch (opTareas)
+                    {
+                        case 1:
+                            Console.WriteLine("Ingresa la tarea:");
+                            tareas.Add(Console.ReadLine());
+                            Console.WriteLine("Tarea agregada.");
+                            break;
+                        case 2:
+                            if (tareas.Count == 0)
+                            {
+                                Console.WriteLine("No hay tareas pendientes.");
+                            }
+                            else
+                            {
+                                for (int i = 0; i < tareas.Count; i++)
+                                    Console.WriteLine($"[{i}] {tareas[i]}");
+                            }
+                            break;
+                        case 3:
+                            Console.WriteLine("Ingresa el índice a eliminar:");
+                            if (int.TryParse(Console.ReadLine(), out int idxTarea) && idxTarea >= 0 && idxTarea < tareas.Count)
+                            {
+                                tareas.RemoveAt(idxTarea);
+                                Console.WriteLine("Tarea eliminada.");
+                            }
+                            else Console.WriteLine("Índice inválido.");
+                            break;
+                        case 4:
+                            continuarTareas = false;
+                            break;
+                    }
+                }
+            }
             break;
+
+        case 7:
+            string[] ciudades = { "Bogotá", "Medellín", "Cali", "Barranquilla", "Cartagena" };
+            Console.WriteLine("Ingresa el nombre de una ciudad:");
+            string ciudadBuscar = Console.ReadLine();
+            bool encontrada = false;
+            foreach (string ciudad in ciudades)
+            {
+                if (ciudad.Equals(ciudadBuscar, StringComparison.OrdinalIgnoreCase))
+                {
+                    encontrada = true;
+                    break;
+                }
+            }
+            Console.WriteLine(encontrada ? "Encontrada" : "No encontrada");
+            break;
+
+        case 8:
+            List<Estudiante> estudiantes = new List<Estudiante>();
+            bool continuarEst = true;
+            while (continuarEst)
+            {
+                Console.WriteLine(@"
+--- Mini CRUD de Estudiantes ---
+1: Registrar estudiante
+2: Mostrar estudiantes
+3: Eliminar estudiante por índice
+4: Volver");
+                if (int.TryParse(Console.ReadLine(), out int opEst))
+                {
+                    switch (opEst)
+                    {
+                        case 1:
+                            Console.WriteLine("Nombre:");
+                            string nombreEst = Console.ReadLine();
+                            Console.WriteLine("Edad:");
+                            int.TryParse(Console.ReadLine(), out int edadEst);
+                            Console.WriteLine("Nota:");
+                            double.TryParse(Console.ReadLine(), out double notaEst);
+                            estudiantes.Add(new Estudiante(nombreEst, edadEst, notaEst));
+                            Console.WriteLine("Estudiante registrado.");
+                            break;
+                        case 2:
+                            if (estudiantes.Count == 0)
+                            {
+                                Console.WriteLine("No hay estudiantes registrados.");
+                            }
+                            else
+                            {
+                                for (int i = 0; i < estudiantes.Count; i++)
+                                    Console.WriteLine($"[{i}] {estudiantes[i]}");
+                            }
+                            break;
+                        case 3:
+                            Console.WriteLine("Ingresa el índice a eliminar:");
+                            if (int.TryParse(Console.ReadLine(), out int idxEst) && idxEst >= 0 && idxEst < estudiantes.Count)
+                            {
+                                estudiantes.RemoveAt(idxEst);
+                                Console.WriteLine("Estudiante eliminado.");
+                            }
+                            else Console.WriteLine("Índice inválido.");
+                            break;
+                        case 4:
+                            continuarEst = false;
+                            break;
+                    }
+                }
+            }
+            break;
+
+        case 9:
+            Console.WriteLine("¡Hasta luego!");
+            return;
     }
 
 }
@@ -128,4 +244,23 @@ int sum_arr(List<int> arr)
         total += number;
     }
     return total;
+}
+
+class Estudiante
+{
+    public string Nombre { get; set; }
+    public int Edad { get; set; }
+    public double Nota { get; set; }
+
+    public Estudiante(string nombre, int edad, double nota)
+    {
+        Nombre = nombre;
+        Edad = edad;
+        Nota = nota;
+    }
+
+    public override string ToString()
+    {
+        return $"Nombre: {Nombre}, Edad: {Edad}, Nota: {Nota}";
+    }
 }

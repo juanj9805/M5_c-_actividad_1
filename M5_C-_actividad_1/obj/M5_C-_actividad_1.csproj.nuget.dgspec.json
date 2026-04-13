@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\JUAN JOSE\\RiderProjects\\M5_C-_actividad_1\\M5_C-_actividad_1\\M5_C-_actividad_1.csproj": {}
+    "C:\\Users\\JUAN JOSE\\Desktop\\M5_c-_actividad_1\\M5_C-_actividad_1\\M5_C-_actividad_1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\JUAN JOSE\\RiderProjects\\M5_C-_actividad_1\\M5_C-_actividad_1\\M5_C-_actividad_1.csproj": {
+    "C:\\Users\\JUAN JOSE\\Desktop\\M5_c-_actividad_1\\M5_C-_actividad_1\\M5_C-_actividad_1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\JUAN JOSE\\RiderProjects\\M5_C-_actividad_1\\M5_C-_actividad_1\\M5_C-_actividad_1.csproj",
+        "projectUniqueName": "C:\\Users\\JUAN JOSE\\Desktop\\M5_c-_actividad_1\\M5_C-_actividad_1\\M5_C-_actividad_1.csproj",
         "projectName": "M5_C-_actividad_1",
-        "projectPath": "C:\\Users\\JUAN JOSE\\RiderProjects\\M5_C-_actividad_1\\M5_C-_actividad_1\\M5_C-_actividad_1.csproj",
+        "projectPath": "C:\\Users\\JUAN JOSE\\Desktop\\M5_c-_actividad_1\\M5_C-_actividad_1\\M5_C-_actividad_1.csproj",
         "packagesPath": "C:\\Users\\JUAN JOSE\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\JUAN JOSE\\RiderProjects\\M5_C-_actividad_1\\M5_C-_actividad_1\\obj\\",
+        "outputPath": "C:\\Users\\JUAN JOSE\\Desktop\\M5_c-_actividad_1\\M5_C-_actividad_1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\JUAN JOSE\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -38,7 +38,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "10.0.200"
       },
       "frameworks": {
         "net9.0": {
@@ -59,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.312/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
